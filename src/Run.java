@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class Run {
     // TODO The plan is to create a command-line application that serves as a search
     // engine for terms within my personal english dictionary along with support for
     // different commands

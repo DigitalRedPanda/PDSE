@@ -1,1 +1,4 @@
+### VS Code ###
 .vscode/
+# Compiled bytecode ".class"
+bin/
