@@ -4,4 +4,4 @@ As the name suggests, it's a personal project which **intended** to provide a si
 
 ## Requirements
 
-This project requires **<ins>at least java 8<ins>** to run **flawlessly** without encountering any _disturbances_
+This project requires **at least <ins>java 8<ins>** to run **flawlessly** without encountering any _disturbances_
