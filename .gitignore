@@ -1,5 +1,5 @@
 ### VS Code ###
-.vscode/
+**/.vscode/
 ## Compiled bytecode (".class" file extension) ##
 target/
 ## Maven files ##
