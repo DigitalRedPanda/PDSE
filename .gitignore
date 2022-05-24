@@ -1,4 +1,6 @@
 ### VS Code ###
 .vscode/
-# Compiled bytecode ".class"
-bin/
+## Compiled bytecode (".class" file extension) ##
+target/
+## Maven files ##
+.apt_generated_tests/
