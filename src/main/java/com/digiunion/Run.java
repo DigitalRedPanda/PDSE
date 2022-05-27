@@ -8,12 +8,13 @@ public class Run {
     // engine for terms within my personal english dictionary along with support for
     // different commands
     public static void main(String[] args) {
-        CompletableFuture<Void> future = new CompletableFuture<>();
+        var future = new CompletableFuture<Void>();
         future.runAsync(() -> {
             try (var input = new Scanner(System.in)) {
                 System.out.println("Welcome to PDSE, type a word that you want to search");
                 var command = input.next();
                 System.out.println("Done!");
+                future.completedFuture(future);
                 System.exit(0);
             }
         });
