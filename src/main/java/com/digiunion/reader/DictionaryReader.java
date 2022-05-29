@@ -17,7 +17,7 @@ public class DictionaryReader implements IDictionaryReader {
         StandardCharsets.UTF_8)) {
       line.parallel().map(fileLine -> fileLine.split(":"))
           .filter(fileLine -> fileLine[0].equalsIgnoreCase(term))
-          .forEach(fileLine -> System.out.printf("%s which means %s", fileLine[0], fileLine[1]));
+          .forEach(fileLine -> System.out.printf("%s which means %s", fileLine[0], fileLine[1].trim()));
     }
   }
 
