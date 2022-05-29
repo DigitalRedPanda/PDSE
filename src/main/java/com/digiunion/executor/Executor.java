@@ -7,8 +7,10 @@ import lombok.Getter;
 
 public abstract class Executor {
 
-  @Getter
   private static final ExecutorService executor = Executors.newFixedThreadPool(
       Runtime.getRuntime().availableProcessors());
 
+  public static void execute(Runnable task) {
+    executor.execute(task);
+  }
 }

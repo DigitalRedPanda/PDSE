@@ -4,3 +4,4 @@
 target/
 ## Maven files ##
 .apt_generated_tests/
+.apt_generated/

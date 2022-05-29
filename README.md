@@ -4,4 +4,4 @@ Personal Dictionary Search Engine (PDSE) is a personal project which **intended*
 
 ## Requirements
 
-This project requires **at least <ins>java 8<ins>** to run _flawlessly_ without encountering any _disturbances_
+This project requires **at least <ins>java 17<ins>** to run _flawlessly_ without encountering any _disturbances_
