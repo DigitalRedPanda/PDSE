@@ -1,6 +1,6 @@
 # PDSE
 
-Personal Dictionary Search Engine (PDSE) is a personal project which **intended** to provide a simple **<ins>search engine</ins>** that supports **multi-threading**, **GUI** _(soon)_
+Personal Dictionary Search Engine (PDSE) is a personal project which **intended** to provide a simple **<ins>search engine</ins>** that supports **multi-threading** and **GUI** _(soon)_
 
 ## Requirements
 

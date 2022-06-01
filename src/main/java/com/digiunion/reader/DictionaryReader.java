@@ -2,27 +2,22 @@ package com.digiunion.reader;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Scanner;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class DictionaryReader implements IDictionaryReader {
 
   Map<String, String> wordMap;
 
   public DictionaryReader() throws IOException {
-    wordMap = new ConcurrentHashMap<>();
-    try (var lines = Files.lines(Path.of(new File("source\\Dictionary.txt").getAbsolutePath()))) {
+    wordMap = new HashMap<>();
+    try (var lines = Files.lines(Path.of("source\\Dictionary.txt"))) {
       wordMap = lines.map(line -> line.split(":"))
-          .collect(Collectors.toConcurrentMap(line -> line[0], line -> line[1].trim()));
+          .collect(Collectors.toMap(line -> line[0], line -> line[1].trim()));
     }
   }
 
