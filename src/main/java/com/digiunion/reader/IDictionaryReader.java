@@ -3,7 +3,7 @@ package com.digiunion.reader;
 import java.io.IOException;
 import java.util.Optional;
 
-public interface IDictionaryReader {
+public sealed interface IDictionaryReader permits DictionaryReader {
 
  Optional<String> find(String term) throws IOException;
 

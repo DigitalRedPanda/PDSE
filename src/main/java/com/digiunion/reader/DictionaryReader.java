@@ -1,6 +1,5 @@
 package com.digiunion.reader;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -9,7 +8,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class DictionaryReader implements IDictionaryReader {
+public non-sealed class DictionaryReader implements IDictionaryReader {
 
   Map<String, String> wordMap;
 
@@ -23,15 +22,7 @@ public class DictionaryReader implements IDictionaryReader {
 
   @Override
   public Optional<String> find(String term) throws IOException {
-    // try (var line = Files.lines(Path.of(new
-    // File("source\\Dictionary.txt").getCanonicalPath()),
-    // StandardCharsets.UTF_8)) {
-    // line.parallel().map(fileLine -> fileLine.split(":"))
-    // .filter(fileLine -> fileLine[0].equalsIgnoreCase(term))
-    // .forEach(fileLine -> System.out.printf("%s which means %s", fileLine[0],
-    // fileLine[1].trim()));
-    // }
-    return Optional.of(wordMap.get(term));
+    return Optional.ofNullable(wordMap.get(term));
   }
 
 }
